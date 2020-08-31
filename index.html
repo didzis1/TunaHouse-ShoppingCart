@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuna House | Shop</title>
+    <link rel="icon" href="images/tunahouse-favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Nav bar -->
+    <nav class="navbar">
+        <div><img class="donut-icon" src="images/sushi-icon.png" alt="Icon of a Donut"></div>
+        <div><a href="#main" class="brand-name">Tuna House</a></div>
+        <div><button id="shopping-cart" class="shopping-cart"><img class="cart-icon" src="images/shopping-cart.png"
+                    alt="Shopping Cart">
+                <p id="itemsInCart">0 items</p>
+            </button></div>
+    </nav>
+
+    <div class="sidebar" id="sideBar">
+        <button id="closeCart">Close Cart</button>
+        <h2>Sushi Cart</h2>
+        <hr>
+        <div id="cartItemsDiv">
+        </div>
+        <div class="cart-total">
+            <hr class="right">
+            <p id="total">Total: 0 €</p>
+            <button class="cart-btn">Checkout</button> <button id="clearCart" class="cart-btn">Clear Cart</button>
+        </div>
+    </div>
+
+    <!-- Main screen -->
+    <section id="main" class="mainBackground">
+        <div class="welcomeBox">
+            <h3 class="spaced">Welcome to the</h3>
+            <span class="main-text">Tuna House</span>
+            <div class="button">
+                <a href="#products" class="browseBtn">Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Tuna House -->
+    <section id="about">
+        <div class="info-flex">
+            <div>
+                <h2>We are the Tuna House</h2>
+                <p>A small imaginary family business working every day to fulfill our customer needs by selling the most
+                    iconic sushi available in Turku, Finland.
+                </p>
+                <p>Our goal is to serve great food and to make customers happy.</p>
+                <p style="font-weight:800;">Our working hours:</p>
+                <ul>
+                    <li>Monday: 08:00 - 20:00</li>
+                    <li>Tuesday: 08:00 - 20:00</li>
+                    <li>Wednesday: 08:00 - 20:00</li>
+                    <li>Thursday: 08:00 - 20:00</li>
+                    <li>Friday: 08:00 - 20:00</li>
+                    <li>Saturday: 12:00 - 22:00</li>
+                    <li>Sunday: 12:00 - 22:00</li>
+                </ul>
+            </div>
+
+            <div>
+                <img name="slide" id="img" class="slide" src="images/slideshow/1.jpg">
+            </div>
+
+            <div class="locationBox">
+                <h2>Delivery / Pick Up</h2>
+                <p>Food can be either picked up at any time you want or delivered to your doorstep!</p>
+                <p>Simply scroll below and add any type of sushi you want to your basket and check out! Choose whether
+                    you want to pick up or get the food delivered!</p>
+                <p style="font-weight:800;">Find us here:</p>
+                <ul>
+                    <li>Tonnikalatalonkatu 1</li>
+                    <li>69023, Turku Finland</li>
+                    <li>tunahouse-bestsushi@tunahouse.com</li>
+                    <li>+358 123 456 789</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+
+    <section id="products" class="productsBackground">
+        <div class="tint">
+            <h2>Menu</h2>
+            <div class="filterBtns">
+            </div>
+
+            <div class="product-flex" id="injectBox">
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made by Didzis Zvaigzne<br>didzis.zvaigzne@gmail.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

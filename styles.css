@@ -1,0 +1,408 @@
+:root {
+    --main-red-color: rgb(243, 85, 85);
+}
+
+body,
+html {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: var(--main-red-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 0 4px 0 rgb(0, 0, 0);
+    z-index: 2;
+}
+
+nav>div {
+    font-size: 20px;
+}
+
+.donut-icon {
+    width: 45px;
+    vertical-align: middle;
+}
+
+.shopping-cart {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.cart-icon {
+    width: 25px;
+    vertical-align: middle;
+}
+
+.navbar p {
+    display: inline-block;
+    font-size: 18px;
+    padding-left: 3px;
+    vertical-align: middle;
+    color: #000;
+}
+
+.brand-name {
+    text-decoration: none;
+    font-family: 'Pacifico', cursive;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 2px 2px #000;
+    font-size: 25px;
+}
+
+#itemsInCart {
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Sidebar */
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    overflow-x: hidden;
+    top: 0;
+    right: 0;
+    background-color: rgb(70, 44, 44);
+    transition: 0.5s;
+    -webkit-box-shadow: -4px 0px 5px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: -4px 0px 5px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: -4px 0px 5px 0px rgba(0, 0, 0, 0.35);
+}
+
+.active {
+    width: 500px;
+}
+
+@media only screen and (max-width:500px) {
+    .active {
+        width: 100%;
+    }
+}
+
+#closeCart {
+    margin: 15px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    outline: none;
+    cursor: Pointer;
+    padding: 5px 8px;
+}
+
+#closeCart:hover {
+    background-color: rgb(170, 68, 68);
+}
+
+.sidebar h2 {
+    text-align: center;
+
+}
+
+hr {
+    width: 30%;
+}
+
+td {
+    width: 30%;
+    text-align: center;
+}
+
+#cartItemsDiv {
+    padding-top: 30px;
+}
+
+.cart-item {
+    width: 100%;
+}
+
+.cart-img {
+    width: 100px;
+    height: 75px;
+    border-radius: 50%;
+    margin-left: 15px;
+
+}
+
+.cart-total {
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+#remove {
+    color: darkorange;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.empty-cart-txt {
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+.cart-btn {
+    border: 1px solid white;
+    background-color: transparent;
+    color: #fff;
+    margin: 0px 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.cart-btn:hover {
+    background-color: rgb(170, 68, 68);
+    ;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+}
+
+.mainBackground {
+    background-image: url(images/sushi-bg.jpg);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.welcomeBox {
+    text-align: center;
+    padding-top: 250px;
+    margin: auto;
+}
+
+.spaced {
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    letter-spacing: 3px;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 1px 2px 2px #000;
+}
+
+.main-text {
+    font-family: 'Pacifico', cursive;
+    font-size: 65px;
+    color: #fff;
+    text-shadow: 1px 2px 2px #000;
+}
+
+.button {
+    margin-top: 50px;
+}
+
+.browseBtn {
+    display: block;
+    text-decoration: none;
+    border: 1px solid pink;
+    width: 100px;
+    font-size: 18px;
+    padding: 8px 6px;
+    margin: 0 auto;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    transition: background-color 0.2s ease-in;
+}
+
+.browseBtn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+#about {
+    background-color: rgb(187, 61, 61);
+}
+
+h2 {
+    margin: 0;
+    color: #fff;
+}
+
+.info-flex {
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: center;
+    column-gap: 50px;
+}
+
+.info-flex>div {
+    padding: 30px 0;
+    width: 350px;
+}
+
+.info-flex:first-child {
+    padding-left: 15px;
+}
+
+.info-flex:last-child {
+    padding-right: 15px;
+}
+
+.slide {
+    display: block;
+    width: 275px;
+    border: 2px solid white;
+    transition: opacity all 2s ease-in;
+    opacity: 1;
+}
+
+.visibilityOff {
+    opacity: 0;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    color: #fff;
+}
+
+p {
+    color: #fff;
+    font-weight: 300;
+}
+
+#products {
+    widows: 100%;
+    min-height: 100vh;
+}
+
+.productsBackground {
+    background-image: url(images/th-bg.jpg);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tint {
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.filterBtns {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+.tint h2 {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    font-size: 40px;
+    color: #fff;
+}
+
+.filterBtn {
+    border: 1px solid #fff;
+    outline: none;
+    padding: 8px 10px;
+    color: #fff;
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color 0.2s ease-in;
+    text-transform: capitalize;
+}
+
+.filterBtn:hover {
+    background-color: rgb(187, 61, 61);
+}
+
+.product-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 80%;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+
+.sushiBox {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 150px;
+    border: 2px solid var(--main-red-color);
+    margin: 10px;
+}
+
+.sushiBox img {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+
+.sushiBox:hover .addCartOverlay {
+    background-color: var(--main-red-color);
+}
+
+.sushiBox img:hover .addCartOverlay {
+    opacity: 1;
+}
+
+.addCartOverlay {
+    transition: .5s ease;
+    opacity: 1;
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #fff;
+    padding: 5px 5px;
+    font-size: 14px;
+    background-color: rgb(255, 224, 224);
+    color: #000;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.itemDescription {
+    margin: 0;
+}
+
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    background-color: rgb(250, 61, 61);
+}
+
+footer p {
+    padding-top: 20px;
+    margin: 0;
+}
